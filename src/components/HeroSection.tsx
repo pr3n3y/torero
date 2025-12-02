@@ -19,7 +19,7 @@ export const HeroSection = () => {
         <div className="absolute inset-0 bg-black/35" />
       </div>
 
-      <div className="absolute z-50 -right-28 animate-floatUpDown">
+      <div className="absolute z-50 top-1/2 md:top-1/3 -right-28 animate-floatUpDown">
         <img
           decoding="async"
           width="480"
@@ -33,7 +33,7 @@ export const HeroSection = () => {
           sizes="(max-width: 480px) 100vw, 480px"
         />
       </div>
-      <div className="absolute z-50 left-0 top-44 animate-floatUpDown">
+      <div className="absolute z-50 -left-20 md:left-0 top-44 animate-floatUpDown">
         <img
           decoding="async"
           width="290"

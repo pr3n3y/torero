@@ -21,7 +21,7 @@ const Index = () => {
         <div className="overflow-hidden relative">
           <HeroSection />
           <HRSolutionsSection />
-          <div className="absolute z-[9999] top-[29%] left-[198px]  animate-floatUpDown">
+          <div className="absolute hidden md:block z-[9999] top-[29%] left-[198px]  animate-floatUpDown">
             <img
               decoding="async"
               width="480"
@@ -40,7 +40,7 @@ const Index = () => {
         <div className="overflow-hidden relative">
           <CTASection />
           <BlogSection />
-          <div className="absolute z-[9999] top-[18%] left-6  animate-float">
+          <div className="absolute  hidden md:block z-[9999] top-[18%] left-6  animate-float">
             <img
               decoding="async"
               width="533"
@@ -54,7 +54,7 @@ const Index = () => {
               sizes="(max-width: 533px) 100vw, 533px"
             />
           </div>
-          <div className="absolute z-[9999] top-[1%] left-44  animate-floatUpDown">
+          <div className="absolute hidden md:block  z-[9999] top-[1%] left-44  animate-floatUpDown">
             <img
               decoding="async"
               width="520"
@@ -68,7 +68,7 @@ const Index = () => {
               sizes="(max-width: 520px) 100vw, 520px"
             />
           </div>
-          <div className="absolute z-[9999] top-[1%] right-[30%]  animate-floatUpDown">
+          <div className="absolute hidden md:block  z-[9999] top-[1%] right-[30%]  animate-floatUpDown">
             <img
               decoding="async"
               width="475"
@@ -82,7 +82,7 @@ const Index = () => {
               sizes="(max-width: 475px) 100vw, 475px"
             />
           </div>
-          <div className="absolute z-[9999] top-[55%] right-[15%]  animate-floatUpDown">
+          <div className="absolute hidden md:block  z-[9999] top-[55%] right-[15%]  animate-floatUpDown">
             <img
               decoding="async"
               width="670"
@@ -96,7 +96,7 @@ const Index = () => {
               sizes="(max-width: 670px) 100vw, 670px"
             />
           </div>
-          <div className="absolute z-[9999] top-[73%] right-[15%]  animate-floatUpDown">
+          <div className="absolute hidden md:block  z-[9999] top-[73%] right-[15%]  animate-floatUpDown">
             <img
               decoding="async"
               width="570"
@@ -110,7 +110,7 @@ const Index = () => {
               sizes="(max-width: 570px) 100vw, 570px"
             />
           </div>
-          <div className="absolute z-[9999] top-[68%] right-[3%]  animate-floatUpDown">
+          <div className="absolute hidden md:block  z-[9999] top-[68%] right-[3%]  animate-floatUpDown">
             <img
               decoding="async"
               width="240"

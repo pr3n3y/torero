@@ -69,7 +69,7 @@ export const HRSolutionsSection = () => {
       className="py-20 bg-[#f7f7f5] mx-auto w-full relative "
     >
       <WaveShape wave={Wave} />
-      <div className="bg- red-400 absolute z-0   inset-0">
+      <div className=" absolute z-0   inset-0">
         <img
           decoding="async"
           width="480"
@@ -83,22 +83,22 @@ export const HRSolutionsSection = () => {
           sizes="(max-width: 480px) 100vw, 480px"
         />
       </div>
-      <div className="container grid grid-cols-2">
-        <div className="container mx-auto px-4 relative">
+      <div className="container grid md:grid-cols-2">
+        <div className="container mx-auto px-0 md:px-4 relative">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
           >
             <div className={`overflow-hidden h-full  bg-transparent border-0`}>
-              <div className="relative h-48 overflow-hidden">
+              <div className="relative hidden md:block h-48 overflow-hidden">
                 {/* Circular border decoration */}
                 <div className="absolute -top-8 -right-8 w-32 h-32 border-[3px] border-transparent rounded-full z-10" />
                 <div className="absolute -bottom-6 -left-6 w-24 h-24 border-[3px] border-transparent rounded-full z-10" />
               </div>
-              <div className="p-6">
-                <h3 className="text-[44px] font-medium mb-3 ">{about.title}</h3>
-                <p className="text-[23px] font-light mb-4">
+              <div className="p-3 md:p-6">
+                <h3 className="text-2xl md:text-[44px] font-medium mb-3 ">{about.title}</h3>
+                <p className="text-md md:text-[23px] font-light mb-4">
                   {about.description}
                 </p>
                 <p className="text-base font-extralight mb-4">
@@ -121,7 +121,7 @@ export const HRSolutionsSection = () => {
             </div>
           </motion.div>
         </div>
-        <div className="container mx-auto px-4 relative">
+        <div className="container mx-auto px-0 md:px-4 relative">
           <div className="grid md:grid-cols-2 gap-6">
             {solutions.map((solution, index) => {
               const Icon = solution.icon;

@@ -36,17 +36,17 @@ export const CTASection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="absolute text-white bottom-[300px] w-1/2 "
+          className="absolute text-white bottom-[300px] md:w-1/2 "
         >
-          <h2 className="text-[64px] font-light mb-6 text-balance leading-tight">
+          <h2 className="text-5xl md:text-[64px] font-light mb-6 text-balance leading-tight">
             If you have the idea we will find the right way
           </h2>
-          <p className="text-2xl text-white/90 font-light mb-8">
+          <p className="text-lg md:text-2xl text-white/90 font-light mb-8">
             Our experienced team is dedicated to turning your vision into
             reality. Let's collaborate and create something extraordinary
             together.
           </p>
-          <Button size="lg" variant="outline" className="shadow-medium text-lg p-8 rounded-lg bg-transparent">
+          <Button size="lg" variant="outline" className="shadow-medium text-sm md:text-lg md:p-8 rounded-lg bg-transparent">
             View all available products
           </Button>
         </motion.div>
