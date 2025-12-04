@@ -1,10 +1,13 @@
 import { Menu, X } from 'lucide-react';
 import { useState, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
+import { Link, useNavigate } from 'react-router-dom';
 
 export const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const navigate = useNavigate()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -16,12 +19,14 @@ export const Header = () => {
   }, []);
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Services', href: '#services' },
-    { label: 'Blog', href: '#blog' },
-    { label: 'Team', href: '#team' },
-    { label: 'Contact', href: '#contact' },
+    { label: 'Home', href: '/' },
+    { label: 'About', href: '/about' },
+    { label: 'Services', href: '/services' },
+    { label: 'Product', href: '/product' },
+    { label: 'Team', href: '/team' },
+    { label: 'Clients', href: '/clients' },
+    { label: 'Testimonials', href: '/testimonials' },
+    { label: 'Contact', href: '/contact' },
   ];
 
   return (
@@ -37,15 +42,15 @@ export const Header = () => {
           <div className={`text-2xl font-bold transition-colors ${
             isScrolled ? 'text-primary' : 'text-white'
           }`}>
-            NIFTY
+            Torero
           </div>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.label}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
                   className={`transition-colors text-sm font-medium ${
                     isScrolled 
                       ? 'text-foreground/80 hover:text-primary' 
@@ -53,7 +58,7 @@ export const Header = () => {
                   }`}
                 >
                   {item.label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>

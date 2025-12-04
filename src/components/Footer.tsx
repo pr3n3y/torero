@@ -15,7 +15,7 @@ export const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-12 mb-12">
           {/* Brand & Newsletter */}
           <div className="lg:col-span-2">
-            <h3 className="text-3xl font-bold mb-4">NIFTY</h3>
+            <h3 className="text-3xl font-bold mb-4">Torero</h3>
             <p className="text-gray-800/80 mb-6">
               Transforming businesses through innovative HR solutions and exceptional talent management.
             </p>
@@ -53,7 +53,7 @@ export const Footer = () => {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-gray-800/60 text-sm">
-            © 2025 Nifty. All rights reserved.
+            © 2025 Torero. All rights reserved.
           </p>
           
           <div className="flex gap-4">

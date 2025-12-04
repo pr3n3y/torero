@@ -4,7 +4,7 @@ import { CheckCircle2, Users, TrendingUp, Target } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import blog1 from "@/assets/blog-1.jpg";
 import blog2 from "@/assets/blog-2.jpg";
-import { WaveShape } from "./WaveShape";
+import { WaveShape } from "../WaveShape";
 import Wave from "@/assets/section2-wave-01.avif";
 import Blob1 from "@/assets/section2-blob-01.avif";
 
@@ -61,13 +61,19 @@ const solutions = [
   },
 ];
 
-export const HRSolutionsSection = () => {
+export const ProductDescSection = () => {
   const Icon = about.icon;
   return (
     <section
       id="services"
       className="py-20 bg-[#f7f7f5] mx-auto w-full relative "
     >
+          <div
+        className="absolute inset-0 bg-cover bg-center h-[90vh]"
+        style={{
+          backgroundImage: `url(https://nifty.bold-themes.com/swirl/wp-content/uploads/sites/5/2020/08/background_dots_01.png)`,
+        }}
+      />
       <WaveShape wave={Wave} />
       <div className=" absolute z-0   inset-0">
         <img
