@@ -19,7 +19,6 @@ export const Header = () => {
   }, []);
 
   const navItems = [
-    { label: 'Home', href: '/' },
     { label: 'About', href: '/about' },
     { label: 'Services', href: '/services' },
     { label: 'Product', href: '/product' },
@@ -39,7 +38,7 @@ export const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className={`text-2xl font-bold transition-colors ${
+          <div onClick={() => navigate('/')} className={`text-2xl font-bold transition-colors ${
             isScrolled ? 'text-primary' : 'text-white'
           }`}>
             Torero
