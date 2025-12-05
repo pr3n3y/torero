@@ -41,23 +41,23 @@ export const Header = () => {
           <div onClick={() => navigate('/')} className={`md:text-2xl font-bold transition-colors ${
             isScrolled ? 'text-primary' : 'text-white'
           }`}>
-            Torero Limited
+            Torero Softwares Ltd.
           </div>
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
               <li key={item.label}>
-                <Link
-                  to={item.href}
+                <a
+                  href={item.href}
                   className={`transition-colors text-sm font-medium ${
-                    isScrolled 
+                    isScrolled
                       ? 'text-foreground/80 hover:text-primary' 
                       : 'text-white/90 hover:text-white'
                   }`}
                 >
                   {item.label}
-                </Link>
+                </a>
               </li>
             ))}
           </ul>
