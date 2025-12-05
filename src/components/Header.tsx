@@ -38,10 +38,10 @@ export const Header = () => {
     >
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div onClick={() => navigate('/')} className={`text-2xl font-bold transition-colors ${
+          <div onClick={() => navigate('/')} className={`md:text-2xl font-bold transition-colors ${
             isScrolled ? 'text-primary' : 'text-white'
           }`}>
-            Torero
+            Torero Limited
           </div>
 
           {/* Desktop Navigation */}

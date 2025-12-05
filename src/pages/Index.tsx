@@ -2,7 +2,6 @@ import { Header } from "@/components/Header";
 import { HeroSection } from "@/components/HeroSection";
 import { HRSolutionsSection } from "@/components/HRSolutionsSection";
 import { RecruitmentProcessSection } from "@/components/RecruitmentProcessSection";
-import { CTASection } from "@/components/CTASection";
 import { BlogSection } from "@/components/BlogSection";
 import { InnovationSection } from "@/components/InnovationSection";
 import { TeamSection } from "@/components/TeamSection";
@@ -12,6 +11,7 @@ import heroBlob1 from "@/assets/hero-floating-blob-1.avif";
 import heroBlob3 from "@/assets/floating-blob-01.avif";
 import innovationBlob1 from "@/assets/innovation-blob-1.avif";
 import innovationBlob2 from "@/assets/innovation-blob-2.avif";
+import CTASection from "@/components/CTASection";
 
 const Index = () => {
   return (
